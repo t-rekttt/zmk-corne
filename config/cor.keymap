@@ -81,10 +81,10 @@
         default_layer {
             label = "0";
             bindings = <
-&none  &kp Q  &kp W  &kp E      &kp R        &kp T                 &kp Y                &kp U           &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D      &kp F        &kp G                 &kp H                &kp J           &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C      &kp V        &kp B                 &kp N                &kp M           &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &lt 3 SQT  &lt 2 SPACE  &mt LCTRL LEFT_WIN    &lt SYMBOLS_L SPACE  &kp LEFT_SHIFT  &kp SQT
+&none  &kp Q  &kp W  &kp E      &kp R                      &kp T          &kp Y        &kp U           &kp I      &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D      &kp F                      &kp G          &kp H        &kp J           &kp K      &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C      &kp V                      &kp B          &kp N        &kp M           &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &lt 3 SQT  &mt LEFT_CONTROL LEFT_WIN  &lt 2 SPACE    &lt 1 SPACE  &kp LEFT_SHIFT  &kp SQT
             >;
         };
 
@@ -98,6 +98,16 @@
             >;
         };
 
+        arrow_layer {
+            label = "3";
+            bindings = <
+&none  &none           &kp UP_ARROW    &none      &sys_reset  &none    &none  &none           &kp UP_ARROW    &none            &none  &none
+&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none       &none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none           &none           &none      &none       &none    &none  &none           &none           &none            &none  &none
+                                       &none      &none       &none    &none  &none           &none
+            >;
+        };
+
         bt_layer {
             label = "2";
             bindings = <
@@ -105,16 +115,6 @@
 &none         &none         &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &none   &none   &none   &none   &none   &none
 &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &none   &none   &none   &none   &none   &none
                                             &none         &none         &none          &none   &none   &none
-            >;
-        };
-
-        arrow_layer {
-            label = "3";
-            bindings = <
-&none  &none           &kp UP_ARROW    &none      &sys_reset  &none    &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none       &none    &none  &none  &none  &none  &none  &none
-&none  &none           &none           &none      &none       &none    &none  &none  &none  &none  &none  &none
-                                       &none      &none       &none    &none  &none  &none
             >;
         };
     };
