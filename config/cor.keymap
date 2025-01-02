@@ -73,6 +73,11 @@
             bindings = <&sys_reset>;
             key-positions = <30 10>;
         };
+
+        command {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <29 30>;
+        };
     };
 
     keymap {
